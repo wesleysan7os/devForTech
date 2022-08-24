@@ -1,7 +1,12 @@
-import { Container } from "./style";
+import { Link } from 'react-router-dom'
+
+import { Container } from "./style"
 
 export function Home() {
   return (
-    <Container>Home</Container>
-  );
+    <Container>
+      <h3>Home</h3>
+      <Link to='/contact'>Contacts</Link>
+    </Container>
+  )
 }
